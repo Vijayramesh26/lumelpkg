@@ -1,0 +1,8 @@
+2025/05/17 12:16:30 2025/05/17 12:16:30 [INFO] [ReqID: dcf70f11-506e-405d-b57c-2ac3c7d76583] INFO [Step GlobalDBInit (+)] []
+2025/05/17 12:16:30 2025/05/17 12:16:30 [DEBUG] [ReqID: af62bb95-996b-4e65-a1ca-5f18ec7cbaa0] DEBUG [Step LocalDbConnect] [Started]
+2025/05/17 12:16:30 2025/05/17 12:16:30 [ERROR] [ReqID: af62bb95-996b-4e65-a1ca-5f18ec7cbaa0] ERROR [Step Init] [loading lDbName failed: config file not found: dbconfig]
+2025/05/17 12:16:30 2025/05/17 12:16:30 [ERROR] [ReqID: af62bb95-996b-4e65-a1ca-5f18ec7cbaa0] ERROR [Step LocalDbConnect] [Failed to init DB details: loading lDbName: config file not found: dbconfig]
+2025/05/17 12:16:30 2025/05/17 12:16:30 [ERROR] [ReqID: dcf70f11-506e-405d-b57c-2ac3c7d76583] ERROR [Step GlobalDBInit] [loading lDbName: loading lDbName: config file not found: dbconfig]
+2025/05/17 12:16:30 2025/05/17 12:16:30 [INFO] [ReqID: dcf70f11-506e-405d-b57c-2ac3c7d76583] INFO [Step GlobalDBInit(-)] [Successfully loaded lDbName config]
+2025/05/17 12:16:30 2025/05/17 12:16:30 [DEBUG] [ReqID: dcf70f11-506e-405d-b57c-2ac3c7d76583] DEBUG [Step 3] [LoadTOMLFile (+) ]
+2025/05/17 12:16:30 2025/05/17 12:16:30 [DEBUG] [ReqID: dcf70f11-506e-405d-b57c-2ac3c7d76583] DEBUG [Step 3] [LoadTOMLFile (-) ]

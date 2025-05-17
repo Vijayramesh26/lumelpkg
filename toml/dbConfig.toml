@@ -1,0 +1,14 @@
+#dbconfig
+
+[DbName] 
+Server = "192.168.2.5"    # localhost
+Port = 3306               # 1433
+User = "LST709"           # your_db_username
+Password = "Best@123"     # your_secure_password
+Database = "vijay"        # your_database_name
+DBType = "mysql"          # "mysql", "postgres", etc.
+
+[DBConnectionPool]
+DbConMaxIdleTime=3
+DbConMaxOpenConns=3
+DbConMaxIdleConns=3
