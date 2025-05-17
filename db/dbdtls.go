@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	SQLDB = "SQL"
+	SQLDB = "localDB"
 )
 
 // Init loads the database configurations from the toml config file.

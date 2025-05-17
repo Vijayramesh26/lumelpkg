@@ -1,2 +1,2 @@
 # lumelpkg
-Contains Go backend logic for assessment
+Contains go basic structure 

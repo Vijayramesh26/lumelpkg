@@ -53,7 +53,7 @@ func LocalDbConnect(pDbName string) (*sql.DB, error) {
 		log.Log(common.ERROR, "LocalDbConnect", fmt.Sprintf("Failed to init DB details: %v", lErr))
 		return nil, lErr
 	}
-
+	fmt.Printf("%+v\n", lDbDetails)
 	var lConnString string
 	var lDBtype string
 	var lDataBaseConnection DatabaseType
@@ -63,7 +63,7 @@ func LocalDbConnect(pDbName string) (*sql.DB, error) {
 		lDataBaseConnection = lDbDetails.DbName
 		lDBtype = lDbDetails.DbName.DBType
 	}
-
+	fmt.Println("lDBtype", lDBtype)
 	// Build the connection string based on DB driver type
 	switch lDBtype {
 	case "mssql":

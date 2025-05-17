@@ -3,6 +3,7 @@ package utils
 import (
 	"fmt"
 	"log"
+	"net/http"
 	"os"
 	"time"
 
@@ -12,6 +13,10 @@ import (
 // Logger struct to hold the request ID (ReqID)
 type Logger struct {
 	ReqID string
+}
+
+func (l *Logger) SetSid(lHttpRequest *http.Request) {
+	panic("unimplemented")
 }
 
 // Initialize the logger (This will configure the log file and output)

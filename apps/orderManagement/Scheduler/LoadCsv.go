@@ -15,7 +15,7 @@ func SchedularInit() {
 	log.Log(common.INFO, "LoadCSVFile ", "Started")
 
 	// File Path and delimeter
-	pFilePath := "./uploadedfiles/orderManagemrnt/OrderDetails.csv"
+	pFilePath := "./uploadedfiles/orderManagement/OrderDetails.csv"
 	pDelimeter := ','
 
 	// Run immediately
@@ -42,7 +42,7 @@ func LoadCSVFile(log *utils.Logger, pFilePath string, pDelimeter rune) error {
 	log.Log(common.INFO, "LoadCSVFile ", "Started")
 
 	// Load CSV data to structure
-	lCsvData, lErr := utils.LoadCSV[ordercommon.CsvData]("./uploadedfiles/orderManagemrnt/OrderDetails.csv", ',')
+	lCsvData, lErr := utils.LoadCSV[ordercommon.CsvData](pFilePath, pDelimeter)
 	if lErr != nil {
 		log.Log(common.ERROR, "LoadCSVFile ", lErr.Error())
 		return lErr
@@ -86,6 +86,7 @@ func LoadCSVFile(log *utils.Logger, pFilePath string, pDelimeter rune) error {
 		}
 
 	}
+	fmt.Printf("lCsvData %+v", lCustomerRec)
 	if lErr = InsertCustomer(log, lCustomerRec); lErr != nil {
 		log.Log(common.ERROR, "LoadCSVFile ", "InsertCustomer ", lErr.Error())
 		return lErr

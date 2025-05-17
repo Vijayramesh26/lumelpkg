@@ -19,11 +19,11 @@ func main() {
 	logger := &utils.Logger{}
 	logger.SetReqID()
 
-	// Load all global DB instance
-	db.GlobalDBInit(logger)
-
 	// Load all toml data in a global variable
 	config.Init(logger)
+
+	// Load all global DB instance
+	db.GlobalDBInit(logger)
 
 	// Load CSV File Data
 	scheduler.SchedularInit()
